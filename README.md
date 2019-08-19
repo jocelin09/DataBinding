@@ -6,6 +6,6 @@ A sample project that shows the implementation of DataBinding and to get json da
 - Volley 
 - Picasso
 
-#### <b> Attaching some screenshots: </b> 
+#### <b> Attaching screenshot: </b> 
 
 <img src = "screenshots/image1.png" width = "250" />  
