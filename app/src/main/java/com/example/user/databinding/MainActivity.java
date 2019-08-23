@@ -54,21 +54,6 @@ public class MainActivity extends AppCompatActivity {
         adapter = new MovieAdapter(getApplicationContext(), modelClassList);
         activityMainBinding.recyclerView.setAdapter(adapter);
 
-
-       // mList = (RecyclerView) findViewById(R.id.recyclerView);
-
-        //modelClassList = new ArrayList<>();
-       // adapter = new MovieAdapter(getApplicationContext(), modelClassList);
-
-       // linearLayoutManager = new LinearLayoutManager(this);
-      //  linearLayoutManager.setOrientation(RecyclerView.VERTICAL);
-       /// dividerItemDecoration = new DividerItemDecoration(mList.getContext(), linearLayoutManager.getOrientation());
-
-
-       // activityMainBinding.recyclerView.setLayoutManager(linearLayoutManager);
-       // mList.addItemDecoration(dividerItemDecoration);
-       // mList.setAdapter(adapter);
-
         getData();
     }
 

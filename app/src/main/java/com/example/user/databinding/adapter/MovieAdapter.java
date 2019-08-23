@@ -1,6 +1,7 @@
 package com.example.user.databinding.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.user.databinding.CustomClickListener;
 import com.example.user.databinding.MainActivity;
 import com.example.user.databinding.R;
+import com.example.user.databinding.TwoWayDataBinding;
 import com.example.user.databinding.databinding.ActivityMainBinding;
 import com.example.user.databinding.databinding.ItemRowBinding;
 import com.example.user.databinding.model.ModelClass;
@@ -38,8 +40,9 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
     @Override
     public void cardClicked(ModelClass f) {
-        Toast.makeText(context, "You clicked on "+f.first_name,
-                Toast.LENGTH_LONG).show();
+        context.startActivity(new Intent(context,TwoWayDataBinding.class));
+//        Toast.makeText(context, "You clicked on "+f.first_name,
+//                Toast.LENGTH_LONG).show();
     }
 
     @BindingAdapter({"android:src"})
